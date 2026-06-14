@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import RegistroTramite from "./pages/RegistroTramite";
 import Dashboard from "./pages/Dashboard";
@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -15,7 +15,7 @@ function App() {
         <Route path="/lista" element={<ListaTramites />} />
         <Route path="/registro" element={<RegistroTramite />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
